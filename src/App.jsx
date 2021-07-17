@@ -41,14 +41,14 @@ function App() {
         <Header theme={theme} toggleTheme={toggleTheme} />
         <Wrapper>
           <Switch>
-            <Route exact path="/">
-              <Redirect to="/countries" />
+            <Route path="/country/:country">
+              <Country theme={theme}/>
             </Route>
             <Route exact path="/countries">
               <Home theme={theme}/>
             </Route>
-            <Route path="/country/:country">
-              <Country theme={theme}/>
+            <Route exact path="/">
+              <Redirect to="/countries" />
             </Route>
           </Switch>
         </Wrapper>

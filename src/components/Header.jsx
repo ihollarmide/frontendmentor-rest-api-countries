@@ -48,11 +48,6 @@ const Switcher = styled.button`
   display: flex;
   font-family: inherit;
   align-items: center;
-  transition: all .2s;
-
-  &:hover {
-    transform: scale(1.2);
-  }
 `
 
 const SwitcherText = styled.span`
@@ -66,7 +61,7 @@ const Header = ({ theme, toggleTheme }) => {
   return (
     <Wrapper>
       <Element>
-        <TitleLink to="/" >Where in the world?</TitleLink>
+        <TitleLink to="/countries" >Where in the world?</TitleLink>
         <Switcher onClick={toggleTheme}>
           {
             theme === "light" ? <ion-icon name="moon-outline"></ion-icon> : <ion-icon name="moon"></ion-icon>
