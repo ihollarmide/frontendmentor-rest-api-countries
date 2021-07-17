@@ -140,9 +140,6 @@ const BorderLabel = styled.h4`
   }
 `
 const BorderCountriesWrapper = styled.div`
-  /* display: flex;
-  align-items: center;
-  flex-wrap: wrap; */
 `
 const BorderButton = styled(Link)`
   box-shadow: ${({ theme }) => theme.boxShadow};
@@ -167,6 +164,11 @@ const BorderButton = styled(Link)`
   @media only screen and (max-width: 520px) {
     min-width: 90px;
     width: 90px;
+  }
+
+  @media only screen and (max-width: 340px) {
+    min-width: 80px;
+    width: 80px;
   }
 `
 
