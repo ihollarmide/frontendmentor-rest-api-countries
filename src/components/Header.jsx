@@ -28,6 +28,11 @@ const Element = styled.div`
 const TitleLink = styled(Link)`
   font-weight: 800;
   font-size: 24px;
+  transition: all .2s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   @media only screen and (max-width: 520px) {
     font-size: 18px;
@@ -43,6 +48,11 @@ const Switcher = styled.button`
   display: flex;
   font-family: inherit;
   align-items: center;
+  transition: all .2s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 `
 
 const SwitcherText = styled.span`

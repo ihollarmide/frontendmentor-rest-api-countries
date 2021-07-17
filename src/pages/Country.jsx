@@ -30,9 +30,11 @@ const BackLinkText = styled.span`
 
 const Country = ({theme}) => {
   const { country } = useParams();
+
+  console.log(country)
   return (
     <>
-      <BackLink to="/">
+      <BackLink to="/countries">
         <ion-icon name="arrow-back-outline"></ion-icon>
         <BackLinkText>Back</BackLinkText>
       </BackLink>

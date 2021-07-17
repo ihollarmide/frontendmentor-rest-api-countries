@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Redirect
 } from "react-router-dom";
 import styled, { ThemeProvider } from 'styled-components'
 import { GlobalStyles } from './styles/globalStyles'
@@ -41,9 +42,12 @@ function App() {
         <Wrapper>
           <Switch>
             <Route exact path="/">
+              <Redirect to="/countries" />
+            </Route>
+            <Route exact path="/countries">
               <Home theme={theme}/>
             </Route>
-            <Route path="/:country">
+            <Route path="/country/:country">
               <Country theme={theme}/>
             </Route>
           </Switch>

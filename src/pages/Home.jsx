@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from 'react'
 import { SearchContext } from '../contexts/SearchContext.jsx';
 import { FilterContext } from '../contexts/FilterContext.jsx';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { Link } from "react-router-dom";
+import { Link, useRouteMatch } from "react-router-dom";
 import axios from 'axios'
 import { nanoid } from 'nanoid'
 import styled from 'styled-components'
@@ -72,6 +72,7 @@ const PlaceholderText = styled.p`
 `
 
 const Home = ({theme}) => {
+  let match = useRouteMatch();
   const { searchTerm } = useContext(SearchContext);
   const { filterKey } = useContext(FilterContext);
   const [error, setError] = useState(null);
@@ -148,7 +149,7 @@ const Home = ({theme}) => {
       <Grid>
         {
           searchCountries(countries).map(country => (
-            <Link key={nanoid()} to={country.name}>
+            <Link key={nanoid()} to={`country/${country.name}`}>
               <CountryCard
                 flag={country.flag} 
                 name={country.name} 
