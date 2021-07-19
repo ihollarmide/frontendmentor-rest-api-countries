@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/ihollarmide/frontendmentor-rest-api-countries)
-- Live Site URL: (https://idris-rest-api-countries.netlify.app/countries)
+- [Solution URL](https://github.com/ihollarmide/frontendmentor-rest-api-countries)
+- [Live Site URL](https://idris-rest-api-countries.netlify.app/countries)
 
 ## My process
 
@@ -64,5 +64,5 @@ I intend to use animations in my next project.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/ihollarmide)
-- Twitter - [@yourusername](https://www.twitter.com/i_hollarmide)
+- Frontend Mentor - [@ihollarmide](https://www.frontendmentor.io/profile/ihollarmide)
+- Twitter - [@i_hollarmide](https://www.twitter.com/i_hollarmide)
