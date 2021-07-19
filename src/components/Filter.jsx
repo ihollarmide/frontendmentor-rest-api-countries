@@ -61,19 +61,25 @@ const FilterDropdown = styled.div`
   top: calc(100% + 3px);
   left: 0;
   width: 100%;
-  background: ${({ theme }) => theme.element};
+  background-color: ${({ theme }) => theme.element};
   box-shadow: ${({ theme }) => theme.boxShadow};
   border-radius: 6px;
   color: ${({ theme }) => theme.text};
-  padding: 16px 12px 16px 20px;
+  padding: 5px 0 10px;
 `
 
 const FilterElement = styled.p`
   color: ${({ theme }) => theme.text};
   cursor: pointer;
+  padding: 10px 20px;
+  margin: 0 !important;
 
-  &:not(:last-of-type) {
-    margin-bottom: 10px;
+  @media only screen and (min-width: 1100px) {
+    transition: background-color .2s;
+
+    &:hover {
+      background-color: ${({ theme }) => theme.body};
+    }
   }
 `
 
@@ -82,8 +88,6 @@ const Filter = ({ theme }) => {
   const toggleDropdown = () => setShowDropdown(!showDropdown);
 
   const {filterList, filterText} = useContext(FilterContext);
-
-  
 
   return (
     <FilterWrapper onClick={toggleDropdown}>

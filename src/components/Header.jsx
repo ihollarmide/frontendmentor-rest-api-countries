@@ -30,8 +30,10 @@ const TitleLink = styled(Link)`
   font-size: 24px;
   transition: all .2s;
 
-  &:hover {
+  @media only screen and (min-width: 1100px) {
+    &:hover {
     transform: scale(1.05);
+    }
   }
 
   @media only screen and (max-width: 520px) {
