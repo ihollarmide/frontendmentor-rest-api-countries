@@ -38,7 +38,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/ihollarmide/frontendmentor-rest-api-countries)
-- [Live Site URL](https://idris-rest-api-countries.netlify.app/countries)
+- [Live Site URL](https://idris-rest-api-countries.netlify.app)
 
 ## My process
 
