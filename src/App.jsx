@@ -50,6 +50,10 @@ function App() {
             <Route exact path="/">
               <Redirect to="/countries" />
             </Route>
+            <Route exact path="/country">
+              <Redirect to="/countries" />
+            </Route>
+            <Route render={() => <Redirect to={{pathname: "/country"}} />} />
           </Switch>
         </Wrapper>
       </ThemeProvider>
