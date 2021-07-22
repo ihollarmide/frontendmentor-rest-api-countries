@@ -6,8 +6,9 @@ const Country = styled.article`
   height: 100%;
   overflow: hidden;
   box-shadow: ${({ theme }) => theme.boxShadow};
-  background: ${({ theme }) => theme.element};
+  background-color: ${({ theme }) => theme.element};
   color: ${({ theme }) => theme.text};
+  transition: background-color .5s ease-in-out, color .5s ease-in-out;
   border-radius: 6px;
 `
 
@@ -60,7 +61,7 @@ const Value = styled.p`
 
 
 
-const CountryCard = ({theme, flag, name, population, region, capital}) => {
+const CountryCard = ({flag, name, population, region, capital}) => {
   return (
     <Country>
       <FlagWrapper flag={flag} />

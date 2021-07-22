@@ -83,7 +83,7 @@ const FilterElement = styled.p`
   }
 `
 
-const Filter = ({ theme }) => {
+const Filter = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const toggleDropdown = () => setShowDropdown(!showDropdown);
 

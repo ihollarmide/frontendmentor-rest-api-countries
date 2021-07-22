@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from 'react'
 import { SearchContext } from '../contexts/SearchContext.jsx';
 import { FilterContext } from '../contexts/FilterContext.jsx';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { Link, useRouteMatch } from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios from 'axios'
 import { nanoid } from 'nanoid'
 import styled from 'styled-components'
@@ -71,8 +71,7 @@ const PlaceholderText = styled.p`
   font-weight: 800;
 `
 
-const Home = ({theme}) => {
-  let match = useRouteMatch();
+const Home = () => {
   const { searchTerm } = useContext(SearchContext);
   const { filterKey } = useContext(FilterContext);
   const [error, setError] = useState(null);
@@ -143,8 +142,8 @@ const Home = ({theme}) => {
       </Helmet>
       
       <DisplayController>
-        <Search theme={theme} />
-        <Filter theme={theme} />
+        <Search />
+        <Filter />
       </DisplayController>
       <Grid>
         {

@@ -17,9 +17,9 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Nunito Sans', BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: 300;
-    background: ${({ theme }) => theme.body};
+    background-color: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
-    transition: all .5s linear;
+    /* transition: background-color .5s ease-in-out, color .5s ease-in-out; */
   }
 
   a {

@@ -172,7 +172,7 @@ const BorderButton = styled(Link)`
   }
 `
 
-const CountryDetails = ({ theme, flag, name, nativeName, population, region, subregion, capital, topLevelDomain, currencies, languages, borders }) => {
+const CountryDetails = ({ flag, name, nativeName, population, region, subregion, capital, topLevelDomain, currencies, languages, borders }) => {
 
   return (
     <Main>

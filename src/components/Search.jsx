@@ -53,7 +53,7 @@ const InputElement = styled.input`
   }
 `
 
-const Search = ({theme}) => {
+const Search = () => {
 
   const { searchTerm, updateSearchTerm } = useContext(SearchContext);
   return (

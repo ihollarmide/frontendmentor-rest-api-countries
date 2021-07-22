@@ -23,7 +23,7 @@ const PlaceholderText = styled.p`
 `
 
 
-const CountryWrapper = ({ theme, country }) => {
+const CountryWrapper = ({ country }) => {
 
   const [countryData, setCountryData ] = useState([]);
   const [countryBorders, setCountryBorders] = useState([]);
@@ -86,8 +86,7 @@ const CountryWrapper = ({ theme, country }) => {
 
         
         
-        <CountryDetails 
-          theme={theme} 
+        <CountryDetails
           name={countryData.name} 
           population={countryData.population} 
           region={countryData.region} 

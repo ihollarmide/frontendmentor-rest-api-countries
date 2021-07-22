@@ -42,10 +42,10 @@ function App() {
         <Wrapper>
           <Switch>
             <Route path="/country/:country">
-              <Country theme={theme}/>
+              <Country />
             </Route>
             <Route exact path="/countries">
-              <Home theme={theme}/>
+              <Home />
             </Route>
             <Route exact path="/">
               <Redirect to="/countries" />

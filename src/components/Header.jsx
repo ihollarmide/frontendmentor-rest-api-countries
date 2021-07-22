@@ -4,7 +4,7 @@ import { func, string } from 'prop-types';
 import styled from 'styled-components'
 
 const Wrapper = styled.header`
-  background: ${({ theme }) => theme.element};
+  background-color: ${({ theme }) => theme.element};
   box-shadow: ${({ theme }) => theme.boxShadow};
 `
 
@@ -28,7 +28,6 @@ const Element = styled.div`
 const TitleLink = styled(Link)`
   font-weight: 800;
   font-size: 24px;
-  transition: all .2s;
 
   @media only screen and (max-width: 520px) {
     font-size: 18px;

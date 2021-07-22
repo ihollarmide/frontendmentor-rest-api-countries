@@ -28,10 +28,9 @@ const BackLinkText = styled.span`
   font-weight: 600;
 `
 
-const Country = ({theme}) => {
+const Country = () => {
   const { country } = useParams();
-
-  console.log(country)
+  
   return (
     <>
       <BackLink to="/countries">
@@ -39,7 +38,7 @@ const Country = ({theme}) => {
         <BackLinkText>Back</BackLinkText>
       </BackLink>
 
-      <CountryWrapper theme={theme} country={country} />
+      <CountryWrapper country={country} />
     </>
   )
 }
